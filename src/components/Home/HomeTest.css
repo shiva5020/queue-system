@@ -1,0 +1,47 @@
+/* Add this CSS in your styles file or component */
+
+/* Container for the entire navigation */
+.nav-container {
+    width: 250px;
+    /* Set the width of the navigation container */
+    height: 100vh;
+    /* Set the height to cover the full viewport height */
+    background-color: #333;
+    /* Background color for the navigation */
+    color: white;
+    /* Text color for the navigation items */
+    padding-top: 20px;
+}
+
+/* Styles for the navigation menu */
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles for each navigation item */
+.nav-item {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+    cursor: pointer;
+}
+
+/* Hover effect for top-level items */
+.nav-item:hover {
+    background-color: #555;
+}
+
+/* Styles for submenus */
+.submenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 15px;
+    display: none;
+}
+
+/* Display submenus on hover */
+.nav-item:hover .submenu {
+    display: block;
+}
